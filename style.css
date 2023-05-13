@@ -420,7 +420,7 @@ p {
 .my-skills {
     height: auto;
     width: 100%;
-    background-color: #edf4fb;
+    background-color: #181823;
     padding-bottom: 20px;
 }
 
@@ -429,7 +429,7 @@ p {
     font-size: 2.5rem;
     text-align: center;
     text-decoration: underline 5px;
-    color: black;
+    color: white;
     text-shadow: 2px 2px red, -2px -2px cyan;
 }
 
@@ -914,7 +914,7 @@ a{
   .contact-info-text span {
     color: #999999;
     font-size: 16px;
-    font-weight: ;
+    /* font-weight: ; */
     display: inline-block;
     width: 100%;
   }
@@ -965,9 +965,3 @@ footer li{
 .footer-copyright p{
     margin-bottom: 0px;
 }
-
-
-
-
-
-
