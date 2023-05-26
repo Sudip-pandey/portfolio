@@ -58,7 +58,7 @@
     <span> "Pronouns" :</span> "He | Him" ,
     <span> "Age" :</span> "18" ,
     <span> "Education" :</span> "Hign School Completed" ,
-    <span>"description" :</span> "A passionate learner <br>                    and tech enthusiast",
+    <span>"description" :</span> <span class="pre-about" style="color:aqua">,</span>
     <span>"Languages" :</span> [
           "C", "C++", "Py", "JS"
     ],
@@ -338,6 +338,23 @@
       "Web Developer",
     ],
     typeSpeed: 100,
+    backSpeed: 40,
+    loop: true,
+  });
+</script>
+  <script>
+  var typing = new Typed(".pre-about", {
+    strings: [
+      "  ",
+      '"A passionate learner"',
+      '"Youtuber"',
+      '"Freelancer"',
+      '"Graphics Designer"',
+      '"Web Designer"',
+      '"Web Developer"',
+      
+    ],
+    typeSpeed: 150,
     backSpeed: 40,
     loop: true,
   });
