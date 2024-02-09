@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins&display=swap");
+
 @font-face {
   font-family: Darkness-regular;
   src: url(./fonts/Darkness.ttf);
 }
+
 @font-face {
   font-family: Adlery-Pro;
   src: url(./fonts/Adlery-Pro-Blockletter-trial.ttf);
 }
+
 @font-face {
   font-family: Requited Script;
   src: url(./fonts/Requited\ Script\ Demo.ttf);
 }
+
 @font-face {
   font-family: RockAway;
   src: url("./fonts/RockAwayDemoRegular.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +62,7 @@ header {
 .logo a {
   font-family: "Pirata one";
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -188,9 +194,11 @@ p {
   /* margin: 50px 20px; */
   /* padding: 30px 30px; */
 }
+
 .content-skills__container pre span {
   color: rgb(0, 255, 149);
 }
+
 .content-skills__container pre span {
   color: rgb(0, 255, 149);
 }
@@ -200,6 +208,7 @@ p {
     flex-basis: 100%;
   }
 }
+
 @media (max-width: 856px) {
   .content-wrapper__section {
     -ms-flex-wrap: wrap;
@@ -270,110 +279,127 @@ p {
 
 
 /* about */
-#about{ display: flex;
+#about {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
   text-align: center;
 }
+
 .about-me {
-    margin-top: 20px;
-    height: auto;
-    width: 80%;
-    
+  margin-top: 20px;
+  height: auto;
+  width: 80%;
+
 }
 
 .about-me .about-h1 h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline 5px;
-    text-shadow: 2px 2px red, -2px -2px cyan;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline 5px;
+  text-shadow: 2px 2px red, -2px -2px cyan;
 }
 
 .about-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-items .img {
-    max-width: 35%;
-    padding-left: 35px;
+  max-width: 35%;
+  padding-left: 35px;
 }
 
 .about-items .about-description {
-    max-width: 80%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
 }
 
 .about-description .about-name h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .about-desc {
-    width: 50%;
-    text-align: center;
-    font-size: 10px;
-    text-align: center;
+  width: 50%;
+  text-align: center;
+  font-size: 10px;
+  text-align: center;
 }
 
 .iam {
-    color: white;
-    font-size: 25px;
-    font-family: Poppins;
+  color: white;
+  font-size: 25px;
+  font-family: Poppins;
 }
 
 .text {
-    font-size: 25px;
-    font-family: Poppins;
-    color: white;
-    padding-left: 15px;
-    /* padding-bottom: 15px; */
-    text-align: center;
+  font-size: 25px;
+  font-family: Poppins;
+  color: white;
+  padding-left: 15px;
+  /* padding-bottom: 15px; */
+  text-align: center;
 }
 
 .typing-animation {
-    display: flex;
-    align-items: center;
-    padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
 }
 
 .about-items .buttons {
-    padding: 15px 0 15px 0;
-    margin: 25px 0 0 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  padding: 15px 0 15px 0;
+  margin: 25px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
 .buttons a {
-    margin-left: 15px;
-    padding: 10px 10px;
-    border-radius: 3px;
-    color: white;
-    border: 1px solid white;
-    font-size: 18px;
-    font-family: Poppins;
-    /* background: #FCFCFD; */
-    text-transform: uppercase;
-    width: auto;
+  margin-left: 15px;
+  padding: 10px 10px;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid white;
+  font-size: 18px;
+  font-family: Poppins;
+  /* background: #FCFCFD; */
+  text-transform: uppercase;
+  width: auto;
 }
 
 
 .buttons a:hover {
-    transform: scale(1.05);
-    transition: 0.5s ease-in-out;
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
 }
 
 
 @media (max-width: 1500px) {
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .about-me {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+
+  }
+
   .about-desc {
     width: 100%;
     text-align: left;
@@ -386,11 +412,13 @@ p {
     flex-direction: row;
   }
 }
+
 @media (max-width: 2400px) {
   .scroll-down {
     display: none;
   }
 }
+
 @media (max-width: 1188px) {
   .about-me {
     max-width: 100%;
@@ -460,6 +488,7 @@ p {
   color: #fff;
   font-weight: 500;
 }
+
 .skils-imgs {
   justify-content: center;
   align-items: center;
@@ -469,6 +498,7 @@ p {
   flex-wrap: wrap;
   height: auto;
 }
+
 .skils-imgs img {
   height: 100px;
   width: 100px;
@@ -476,6 +506,7 @@ p {
   filter: grayscale(20) drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.351));
   opacity: 0.4;
 }
+
 .skils-imgs img:hover {
   filter: grayscale(0);
   opacity: 1;
@@ -661,10 +692,12 @@ img {
   font-size: 25px;
   font-family: Poppins;
 }
+
 p#info {
   font-size: 18px;
   color: black;
 }
+
 #details .button {
   position: absolute;
   /* width: 30%; */
@@ -721,6 +754,7 @@ i:hover {
   text-align: center;
   text-decoration: underline 5px;
 }
+
 .row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -755,6 +789,7 @@ i:hover {
 .service p {
   font-size: 18px;
 }
+
 .service:hover {
   background: #303ef7;
   color: #fff;
@@ -886,26 +921,32 @@ a {
   text-decoration: none;
   font-family: Poppins;
 }
+
 .contact-info {
   display: inline-block;
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
 }
+
 .contact-info-icon {
   margin-bottom: 15px;
 }
+
 .contact-info-item {
   background: #071c34;
   padding: 30px 0px;
 }
+
 .contact-info-icon i {
   font-size: 48px;
   color: #fda40b;
 }
+
 .contact-info-text p {
   margin-bottom: 5px;
 }
+
 .contact-info-text h2 {
   color: #fff;
   font-size: 22px;
@@ -913,6 +954,7 @@ a {
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .contact-info-text span {
   color: #999999;
   font-size: 16px;
@@ -920,6 +962,7 @@ a {
   display: inline-block;
   width: 100%;
 }
+
 footer {
   /*background-color: #272727;*/
   text-align: center;
@@ -942,6 +985,7 @@ footer li {
   border-radius: 100%;
   display: flex;
 }
+
 .icons a:hover {
   color: #ffffff;
   transition: 0.5s;
@@ -951,6 +995,7 @@ footer li {
   color: #ffffff;
   text-transform: capitalize;
 }
+
 .menu a:hover {
   color: #52527a;
   transition: 0.5s;
@@ -969,8 +1014,10 @@ footer li {
 }
 
 #particles-js {
-  position: fixed; /* or position: absolute; */
+  position: fixed;
+  /* or position: absolute; */
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure the Particle.js container stays behind other elements */
+  z-index: -1;
+  /* Ensure the Particle.js container stays behind other elements */
 }
