@@ -42,7 +42,7 @@ const jsonProfile = [
     '  <span class="key">"username"</span><span class="colon">:</span> <span class="string">"@whiospandey"</span>,',
     '  <span class="key">"Date Of Birth"</span><span class="colon">:</span> <span class="string">"2004-04-11"</span>,',
     '  <span class="key">"Pronouns"</span><span class="colon">:</span> <span class="string">"He | Him"</span>,',
-    '  <span class="key">"Age"</span><span class="colon">:</span> <span class="number">19</span>,',
+    '  <span class="key">"Age"</span><span class="colon">:</span> <span class="number">22</span>,',
     '  <span class="key">"Education"</span><span class="colon">:</span> <span class="string">"High School Completed"</span>,',
     '  <span class="key">"Languages"</span><span class="colon">:</span> <span class="bracket">[</span> <span class="string">"C"</span>, <span class="string">"C++"</span>, <span class="string">"Py"</span>, <span class="string">"JS"</span> <span class="bracket">]</span>,',
     '  <span class="key">"Frameworks"</span><span class="colon">:</span> <span class="bracket">[</span> <span class="string">"Django"</span>, <span class="string">"Laravel"</span>, <span class="string">"React"</span> <span class="bracket">]</span>,',
