@@ -1,400 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudip Pandey | Portfolio</title>
-    <meta name="description" content="Portfolio of Sudip Pandey - Passionate Learner & Tech Enthusiast">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudip Pandey | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+:root{--bg-color:#0d1117;--text-color:#c9d1d9;--primary-color:#58a6ff;--secondary-color:#238636;--accent-color:#d2a8ff;--string-color:#a5d6ff;--key-color:#7ee787;--number-color:#79c0ff;--glass-bg:rgba(22,27,34,0.7);--glass-border:rgba(48,54,61,0.7);--font-main:'Outfit',sans-serif;--font-code:'Fira Code',monospace}*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}body{background-color:var(--bg-color);background-image:radial-gradient(900px 480px at 50% 0%,rgba(88,166,255,0.05),transparent 70%);background-attachment:fixed;color:var(--text-color);font-family:var(--font-main);overflow-x:hidden;cursor:auto}#cursor{position:fixed;top:0;left:0;width:20px;height:20px;border:2px solid var(--primary-color);border-radius:5px;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width 0.2s,height 0.2s,background 0.2s;mix-blend-mode:difference}#cursor-blur{position:fixed;top:0;left:0;width:250px;height:250px;background:var(--primary-color);border-radius:50%;filter:blur(100px);opacity:0.1;pointer-events:none;z-index:9998;transform:translate(-50%,-50%)}h1,h2,h3{font-weight:700}.highlight{color:var(--primary-color)}.neon-text{color:var(--primary-color);text-shadow:0 0 10px rgba(88,166,255,0.5)}nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 5%;position:fixed;width:100%;top:0;z-index:1000;backdrop-filter:blur(10px);background:rgba(13,17,23,0.8);border-bottom:1px solid var(--glass-border)}.logo{font-size:1.5rem;font-weight:700;font-family:var(--font-code)}.menu-btn{display:none;cursor:pointer}.bar{width:25px;height:3px;background-color:var(--text-color);margin:5px 0;transition:0.4s}.menu-btn.active .bar:nth-child(1){transform:rotate(-45deg) translate(-5px,6px);background-color:var(--primary-color)}.menu-btn.active .bar:nth-child(2){opacity:0}.menu-btn.active .bar:nth-child(3){transform:rotate(45deg) translate(-5px,-6px);background-color:var(--primary-color)}.nav-links{display:flex;gap:2rem}.nav-links a{text-decoration:none;color:var(--text-color);font-family:var(--font-code);font-size:0.9rem;position:relative;transition:color 0.3s}.nav-links a:hover{color:var(--primary-color)}#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:120px 5% 50px}.hero-split-container{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1400px;gap:4rem;z-index:10}.hero-text-content{flex:1;max-width:600px}.hero-visual-content{flex:1;max-width:700px;display:flex;justify-content:center}.greeting{font-size:1.5rem;color:var(--primary-color);margin-bottom:1rem;font-family:var(--font-code)}.name{font-size:4rem;margin-bottom:1.5rem;background:linear-gradient(to right,#fff,#999);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}.bio-text p{margin-bottom:1rem;font-size:1.1rem;line-height:1.6;color:#a0a0a0}.cta-buttons{display:flex;gap:1.5rem;margin-top:2rem}.terminal-window{width:100%;background:#0d1117;border:1px solid var(--glass-border);border-radius:10px;box-shadow:0 20px 50px rgba(0,0,0,0.5);overflow:hidden;transform-origin:center;transition:transform 0.3s,box-shadow 0.3s}.terminal-window:hover{box-shadow:0 25px 60px rgba(88,166,255,0.1);border-color:rgba(88,166,255,0.3)}.terminal-header{background:#161b22;padding:10px 15px;display:flex;align-items:center;border-bottom:1px solid var(--glass-border)}.buttons{display:flex;gap:8px;margin-right:20px}.btn-dot{width:12px;height:12px;border-radius:50%;display:inline-block}.close{background:#ff5f56}.minimize{background:#ffbd2e}.maximize{background:#27c93f}.title{font-family:var(--font-code);font-size:0.8rem;color:#8b949e;margin:0 auto;padding-right:40px}.terminal-body{padding:20px;display:flex;font-family:var(--font-code);align-items:flex-start}.line-numbers{color:#484f58;text-align:right;margin-right:20px;user-select:none;line-height:1.6;font-size:0.95rem}.code-content{flex:1;color:var(--text-color);line-height:1.6;font-size:0.95rem;white-space:pre-wrap;word-break:break-all}.key{color:var(--key-color)}.string{color:var(--string-color)}.number{color:var(--number-color)}.boolean{color:var(--accent-color)}.colon{color:var(--text-color)}.bracket{color:#ffd700}.scroll-indicator{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font-family:var(--font-code);font-size:0.8rem;color:#8b949e;opacity:0.7}.mouse{width:20px;height:35px;border:2px solid #8b949e;border-radius:15px;position:relative}.wheel{width:4px;height:6px;background:#8b949e;border-radius:2px;position:absolute;top:6px;left:50%;transform:translateX(-50%);animation:scroll 1.5s infinite}@keyframes scroll{0%{top:6px;opacity:1}100%{top:18px;opacity:0}}.hero-bg{position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(650px 420px at 85% 8%,rgba(88,166,255,0.10),transparent 70%),radial-gradient(520px 380px at 8% 92%,rgba(210,168,255,0.08),transparent 70%);z-index:-1;pointer-events:none}section{padding:100px 10%;position:relative;z-index:1}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:var(--text-color)}.section-title span{font-family:var(--font-code)}.glass{background:var(--glass-bg);backdrop-filter:blur(10px);border:1px solid var(--glass-border);border-radius:8px;padding:2rem;transition:transform 0.3s,border-color 0.3s}.glass:hover{border-color:var(--primary-color)}.about-container.split-layout{display:flex;gap:3rem;align-items:center;justify-content:center}.about-text{flex:1.5}.about-visual{flex:1;display:flex;justify-content:center}.nickname-badge{width:100%;max-width:350px;text-align:center;background:rgba(88,166,255,0.05)}.badge-header{font-family:var(--font-code);text-align:right;font-size:0.8rem;margin-bottom:1rem;color:var(--primary-color);letter-spacing:1px}.badge-avatar{margin-bottom:1rem}.avatar-placeholder{width:120px;height:120px;background:rgba(13,17,23,0.5);border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:2.5rem;font-weight:bold;color:var(--primary-color);border:3px solid var(--primary-color);box-shadow:0 0 20px rgba(88,166,255,0.4);position:relative}.avatar-placeholder::after{content:'';position:absolute;bottom:5px;right:5px;width:20px;height:20px;background:#27c93f;border-radius:50%;border:3px solid #0d1117}.badge-content h3{font-size:1.8rem;margin-bottom:0.2rem;color:var(--text-color)}.badge-role{color:#8b949e;font-family:var(--font-code);margin-bottom:2rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px}.badge-attributes{display:grid;grid-template-columns:1fr 1fr;gap:15px;text-align:left}.attribute{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.03);padding:10px;border-radius:8px;border:1px solid transparent;transition:all 0.3s}.attribute:hover{border-color:var(--primary-color);background:rgba(88,166,255,0.1);transform:translateY(-2px)}.attr-icon{font-size:1.2rem}.attr-label{font-family:var(--font-code);font-size:0.8rem;color:var(--text-color)}.terminal-header.small{padding:5px 10px;margin:-2rem -2rem 1.5rem -2rem;border-top-left-radius:8px;border-top-right-radius:8px}.skills-container{display:flex;flex-wrap:wrap;justify-content:center;gap:2rem}.skill-category{flex:1;min-width:250px}.skill-category h3{margin-bottom:1.5rem;font-family:var(--font-code);color:var(--primary-color);display:flex;align-items:center;gap:10px}.prompt{color:var(--secondary-color)}.skill-items{display:flex;flex-wrap:wrap;gap:0.8rem}.skill-tag{background:rgba(88,166,255,0.1);color:var(--primary-color);padding:5px 12px;border-radius:4px;font-family:var(--font-code);font-size:0.85rem;border:1px solid transparent;transition:all 0.3s}.skill-tag:hover{border-color:var(--primary-color);background:rgba(88,166,255,0.2);transform:translateY(-2px)}.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}.project-card{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:220px;cursor:pointer}.project-card::before{content:'';position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,var(--primary-color),transparent);opacity:0;transition:opacity 0.3s}.project-card:hover{transform:translateY(-8px);box-shadow:0 18px 35px rgba(88,166,255,0.12)}.project-card:hover::before{opacity:1}.project-header{display:flex;align-items:center;gap:10px;margin-bottom:1rem}.project-header h3{color:#e6edf3}.folder-icon{font-size:1.5rem;filter:drop-shadow(0 0 8px rgba(88,166,255,0.35))}.project-tech{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem;font-size:0.8rem;font-family:var(--font-code);color:#8b949e}.project-tech span{border:1px solid var(--glass-border);border-radius:999px;padding:4px 9px;background:rgba(255,255,255,0.02)}.project-links{display:flex;gap:1rem;margin-top:auto;padding-top:1.5rem}.project-links a{display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--text-color);font-family:var(--font-code);font-size:0.85rem;transition:all 0.3s;opacity:0.7}.project-links a:hover{color:var(--primary-color);opacity:1;transform:translateY(-2px)}.project-links a i{font-size:1rem;color:var(--primary-color)}.contact-container{max-width:900px !important;margin:0 auto !important;padding:0 !important;overflow:hidden}.contact-terminal-content{padding:2rem;font-family:var(--font-code);text-align:center}.contact-header{margin-bottom:2rem;display:flex;justify-content:center;gap:10px;font-size:1.1rem}.command{color:var(--accent-color)}.contact-links-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2rem;justify-content:center}.contact-item{display:flex;flex-direction:column;align-items:center;gap:1rem;text-decoration:none;color:var(--text-color);padding:2rem !important;transition:all 0.3s ease;border:1px solid var(--glass-border);text-align:center}.contact-item:hover{transform:translateY(-5px);border-color:var(--primary-color);background:rgba(88,166,255,0.05);box-shadow:0 5px 20px rgba(88,166,255,0.1)}.item-icon{font-size:2rem;color:var(--primary-color);width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:rgba(88,166,255,0.1);border-radius:12px}.item-info h3{font-size:1.2rem;margin-bottom:0.5rem;color:var(--text-color)}.item-info p{font-size:0.9rem;color:#8b949e}.contact-footer{border-top:1px solid var(--glass-border);padding-top:1.5rem}.terminal-action{display:flex;justify-content:center;gap:10px;font-size:0.95rem}.terminal-action .command{color:var(--string-color)}.terminal-input-group,textarea,.contact-info,.social-links{display:none}.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--primary-color);color:var(--primary-color);padding:12px 28px;font-family:var(--font-code);font-weight:600;text-decoration:none;cursor:pointer;transition:all 0.3s;text-transform:uppercase;font-size:0.9rem;overflow:hidden}.btn::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(88,166,255,0.12),rgba(210,168,255,0.12));transform:translateX(-101%);transition:transform 0.35s ease}.btn:hover{background:rgba(88,166,255,0.1);box-shadow:0 0 18px rgba(88,166,255,0.28);transform:translateY(-3px);text-decoration:none}.btn:hover::before{transform:translateX(0)}.contact-info{text-align:center;margin-top:30px}.social-links{margin:20px 0;display:flex;justify-content:center;gap:1.5rem}.social-icon{width:45px;height:45px;display:flex;align-items:center;justify-content:center;border:1px solid var(--glass-border);border-radius:50%;color:var(--text-color);text-decoration:none;transition:all 0.3s;font-family:var(--font-code);font-weight:bold}.social-icon:hover{border-color:var(--primary-color);background:rgba(88,166,255,0.1);color:var(--primary-color)}footer{text-align:center;padding:2rem;font-size:0.8rem;opacity:0.6;font-family:var(--font-code)}@media (max-width:900px){.menu-btn{display:block;cursor:pointer}.nav-links{position:absolute;top:100%;left:0;width:100%;background:rgba(13,17,23,0.95);backdrop-filter:blur(10px);flex-direction:column;align-items:center;padding:2rem 0;gap:2rem;transform:translateY(-150%);transition:transform 0.4s ease;border-bottom:1px solid var(--glass-border)}.nav-links.active{transform:translateY(0);box-shadow:0 10px 30px rgba(0,0,0,0.5)}.hero-split-container{flex-direction:column-reverse;gap:3rem;padding-top:50px}.hero-text-content,.hero-visual-content{max-width:100%;text-align:center}.cta-buttons{justify-content:center}.about-container.split-layout{flex-direction:column}.nickname-badge{max-width:100%}.terminal-body{padding:10px;font-size:0.75rem}.code-content{font-size:0.7rem;line-height:1.4}.line-numbers{display:none}h1{font-size:2.5rem}h2.section-title{font-size:2rem}.contact-links-grid{grid-template-columns:1fr}}.project-new{margin-left:auto;font-family:var(--font-code);font-size:0.7rem;letter-spacing:1px;color:var(--primary-color);border:1px solid rgba(88,166,255,0.5);border-radius:4px;padding:3px 8px}.about-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;margin-top:3rem}.about-stat{text-align:center;padding:1.5rem 1rem}.about-stat b{display:block;font-size:2rem;font-family:var(--font-code);color:var(--primary-color)}.about-stat span{font-family:var(--font-code);font-size:0.75rem;letter-spacing:2px;color:#8b949e}.about-text p{margin:0 0 1.1rem;line-height:1.8;color:#c9d1d9}.about-text p.about-lead{font-size:1.3rem;font-weight:600;line-height:1.5;color:#f0f6fc;margin-bottom:1.4rem}.about-text .hl{color:var(--primary-color);font-weight:600}.about-text p.terminal-line{font-family:var(--font-code);font-size:0.95rem;background:rgba(88,166,255,0.06);border-left:3px solid var(--primary-color);padding:0.8rem 1rem;border-radius:0 6px 6px 0;margin-top:1.5rem;margin-bottom:0}.badge-meta{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--glass-border);font-family:var(--font-code);font-size:0.85rem;color:#8b949e;display:flex;flex-direction:column;gap:0.4rem}.section-prompt{text-align:center;font-family:var(--font-code);font-size:1rem;margin-bottom:0.75rem;color:var(--text-color)}.section-prompt .prompt-user{color:var(--key-color)}.section-prompt .prompt-cmd{color:var(--accent-color)}.prompt-cursor{color:var(--primary-color);margin-left:6px;animation:prompt-blink 1.1s step-end infinite}@keyframes prompt-blink{50%{opacity:0}}@media (max-width:480px){.section-prompt{font-size:0.85rem}}.section-sub{text-align:center;color:#8b949e;max-width:640px;margin:0 auto 3rem;font-size:1rem}.section-sub code{font-family:var(--font-code);color:var(--primary-color);background:rgba(88,166,255,0.08);padding:1px 6px;border-radius:4px;font-size:0.9em}.interactive-terminal{max-width:860px;margin:0 auto}.interactive-body{padding:20px;font-family:var(--font-code);font-size:0.92rem;line-height:1.7;min-height:260px;max-height:420px;overflow-y:auto;white-space:pre-wrap;word-break:break-word}.interactive-body .term-out{color:var(--text-color);display:block;margin-bottom:0.4rem}.interactive-body .term-echo{color:var(--primary-color);display:block;margin-top:0.6rem}.interactive-body .term-err{color:#ff7b72;display:block}.interactive-body .term-ok{color:var(--key-color);display:block}.interactive-input-row{display:flex;align-items:center;gap:10px;border-top:1px solid var(--glass-border);padding:12px 20px;font-family:var(--font-code)}.interactive-prompt{color:var(--key-color);font-size:0.92rem;white-space:nowrap}#interactive-input{flex:1;min-width:0;background:transparent;border:none;outline:none;color:var(--text-color);font-family:var(--font-code);font-size:0.92rem;caret-color:var(--primary-color)}#interactive-input::placeholder{color:#484f58}@media (max-width:480px){.interactive-body{font-size:0.82rem;padding:14px}}
+</style>
 </head>
-
 <body>
-    <div id="cursor"></div>
-    <div id="cursor-blur"></div>
+  <div id="cursor"></div>
+  <div id="cursor-blur"></div>
 
-    <nav>
-        <div class="logo" style="font-family: Pacifico, cursive; font-weight: 400;  font-style: normal;">Pandey<span class="highlight">.</span></div>
-        <div class="nav-links">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+  <div id="home" aria-hidden="true"></div>
+
+  <nav>
+    <div class="logo">Pandey.</div>
+    <div class="menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-split-container">
+      <div class="hero-text-content">
+        <p class="greeting"># Hi, I'm</p>
+        <h1 class="name">Pandey Sudip</h1>
+        <div class="bio-text">
+          <p>Hi i'm Pandey Sudip from Nepal. A passionate learner and tech enthusiast.</p>
+          <p>Who just knows how to print "★彡 🅷🅴🅻🅻🅾 🆆🅾🆁🅻🅳! 彡★" in 5️⃣+ Languages😂.</p>
+          <p>And don't know anything about 🅷🅰🅲🅺🅴🆁, But i'm 🅷🅰🅲🅺🅴🆁 infront of my Friends 🌐</p>
+          <p>Curious soul, tech lover, and wanderer at heart. ✨🧭</p>
         </div>
-        <div class="menu-btn">
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn">View Work</a>
+          <a href="#contact" class="btn">Contact Me</a>
+          <a href="#terminal" class="btn">Open Terminal</a>
         </div>
-    </nav>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-split-container">
-                <div class="hero-text-content">
-                    <p class="greeting"># Hi, I'm</p>
-                    <h1 class="name">Pandey Sudip</h1>
-                    <div class="bio-text">
-                        <p>Hi i'm Pandey Sudip from Nepal. A passionate learner and tech enthusiast.</p>
-                        <p>Who just knows how to print <span class="highlight">"★彡 🅷🅴🅻🅻🅾 🆆🅾🆁🅻🅳! 彡★"</span> in
-                            5️⃣+ Languages😂.</p>
-                        <p>And don't know anything about <span class="neon-text">🅷🅰🅲🅺🅴🆁</span>, But i'm
-                            <strong>🅷🅰🅲🅺🅴🆁</strong> infront of my Friends 🌐
-                        </p>
-                        <p>Curious soul, tech lover, and wanderer at heart. ✨🧭</p>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn primary">View Work</a>
-                        <a href="#contact" class="btn secondary">Contact Me</a>
-                    </div>
-                </div>
-
-                <div class="hero-visual-content">
-                    <div class="terminal-window">
-                        <div class="terminal-header">
-                            <div class="buttons">
-                                <span class="btn-dot close"></span>
-                                <span class="btn-dot minimize"></span>
-                                <span class="btn-dot maximize"></span>
-                            </div>
-                            <div class="title">pandey-sudip — portfolio — 85x30</div>
-                        </div>
-                        <div class="terminal-body">
-                            <div class="line-numbers">
-                                <!-- JS will populate this -->
-                            </div>
-                            <div class="code-content">
-                                <pre><code id="typewriter-target"></code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="hero-visual-content">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="buttons">
+              <span class="btn-dot close"></span>
+              <span class="btn-dot minimize"></span>
+              <span class="btn-dot maximize"></span>
             </div>
+            <span class="title">pandey-sudip — portfolio — 85x30</span>
+          </div>
+          <div class="terminal-body">
+            <div class="line-numbers"></div>
+            <div class="code-content" id="typewriter-target"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
 
-            <div class="scroll-indicator">
-                <span>SCROLL</span>
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </div>
+  <!-- About -->
+  <section id="about">
+    <p class="section-prompt"><span class="prompt-user">root@pandey:~$</span> <span class="prompt-cmd">cat about.txt</span><span class="prompt-cursor" aria-hidden="true">▋</span></p>
+    <h2 class="section-title"><span>01.</span> About Me</h2>
+    <div class="about-container split-layout">
+      <div class="about-text glass">
+        <div class="terminal-header small">
+          <div class="buttons">
+            <span class="btn-dot close"></span>
+            <span class="btn-dot minimize"></span>
+            <span class="btn-dot maximize"></span>
+          </div>
+          <span class="title">about.txt</span>
+        </div>
+        <p class="about-lead">Technician by day. Builder by night. Part-time Wi-Fi whisperer, full-time tech_life enjoyer. 🇳🇵</p>
+        <p>People call me a full stack developer. The truth? I'm the <span class="hl">Picasso of copy-pasting from Stack Overflow</span> — and somehow, the painting compiles! 😂</p>
+        <p>And get this: I'm a <span class="hl">hacker who can't hack</span>! 🕵️‍♂️ My friends think I'm a cyber-criminal. Reality? I print 'Hello, World!' in six languages and feel like a genius every single time! 🌎👋</p>
+        <p>So yeah — I'm basically a <span class="hl">tech superhero</span>... minus the cape, minus the superpowers, minus the movie deal. Just a guy and his screwdriver. 🦸‍♂️</p>
+        <p>I write the bug first, then heroically fix it. I don't just write code — I <span class="hl">wrestle it to the ground</span> until it behaves. The code usually taps out first. Usually.</p>
+        <p>Always learning, always building, occasionally breaking the internet — locally, and only my own Wi-Fi, I promise.</p>
+        <p class="terminal-line"><span class="prompt">$</span> whoami → <span class="hl">sudip</span> · technician · builder · bug hunter</p>
+      </div>
+      <div class="about-visual">
+        <div class="nickname-badge glass">
+          <div class="badge-header">STATUS: ONLINE</div>
+          <div class="badge-avatar">
+            <div class="avatar-placeholder">PS</div>
+          </div>
+          <div class="badge-content">
+            <h3>Pandey Sudip</h3>
+            <p class="badge-role">Tech Superhero 🦸‍♂️</p>
+          </div>
+          <div class="badge-attributes">
+            <div class="attribute"><span class="attr-icon">☕</span><span class="attr-label">Coffee Powered</span></div>
+            <div class="attribute"><span class="attr-icon">🐛</span><span class="attr-label">Bug Hunter</span></div>
+            <div class="attribute"><span class="attr-icon">🚀</span><span class="attr-label">Fast Learner</span></div>
+            <div class="attribute"><span class="attr-icon">💻</span><span class="attr-label">Code Lover</span></div>
+          </div>
+          <div class="badge-meta">
+            <span>📍 Waling, Syangja, Nepal</span>
+            <span>🛠️ Head Technician</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-stats">
+      <div class="about-stat glass"><b>13</b><span>PROJECTS</span></div>
+      <div class="about-stat glass"><b>05</b><span>ANDROID APPS</span></div>
+      <div class="about-stat glass"><b>50</b><span>FILEFORGE TOOLS</span></div>
+      <div class="about-stat glass"><b>2023</b><span>DIPLOMA IN IT</span></div>
+    </div>
+  </section>
 
-            <div class="hero-bg-elements">
-                <div class="grid-bg"></div>
-                <!-- Particles will be handled by simple CSS or JS if needed, keeping it CSS for performance -->
-            </div>
-        </section>
+  <!-- Skills -->
+  <section id="skills">
+    <p class="section-prompt"><span class="prompt-user">root@pandey:~$</span> <span class="prompt-cmd">ls skills/</span><span class="prompt-cursor" aria-hidden="true">▋</span></p>
+    <h2 class="section-title"><span>02.</span> Skills</h2>
+    <div class="skills-container">
+      <div class="skill-category glass">
+        <h3><span class="prompt">&gt;</span> Languages</h3>
+        <div class="skill-items">
+          <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+        </div>
+      </div>
+      <div class="skill-category glass">
+        <h3><span class="prompt">&gt;</span> Android &amp; Mobile</h3>
+        <div class="skill-items">
+          <span class="skill-tag">Android</span>
+          <span class="skill-tag">IME</span>
+          <span class="skill-tag">Canvas</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">XML</span>
+        </div>
+      </div>
+      <div class="skill-category glass">
+        <h3><span class="prompt">&gt;</span> Web &amp; Backend</h3>
+        <div class="skill-items">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">XAMPP</span>
+          <span class="skill-tag">GSAP</span>
+        </div>
+      </div>
+      <div class="skill-category glass">
+        <h3><span class="prompt">&gt;</span> Networking &amp; IT</h3>
+        <div class="skill-items">
+          <span class="skill-tag">Fiber Optics</span>
+          <span class="skill-tag">Networking</span>
+          <span class="skill-tag">mDNS</span>
+          <span class="skill-tag">CCTV</span>
+          <span class="skill-tag">PC Repair</span>
+        </div>
+      </div>
+      <div class="skill-category glass">
+        <h3><span class="prompt">&gt;</span> Tools</h3>
+        <div class="skill-items">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">VirtualBox</span>
+          <span class="skill-tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title">01. <span class="highlight">About Me</span></h2>
-            <div class="about-container split-layout">
-                <div class="about-text glass">
-                    <div class="terminal-header small">
-                        <div class="title">about.txt</div>
-                    </div>
-                    <div class="card-content">
-                        <p>Hey hey, <strong class="neon-text">Pandey Sudip</strong> here, straight outta Nepal! 🇳🇵 I'm
-                            all about that <code>tech_life</code>, you know? 💻</p>
-                        <br>
-                        <p>They call me a <span class="highlight">pull stack developer</span>—basically, I'm the Picasso
-                            of copy-pasting from Stack Overflow! 😂</p>
-                        <br>
-                        <p>And get this: I'm a hacker without a clue about hacking! 🕵️‍♂️ But wait, there's more! I'm a
-                            pro at printing 'Hello, World!' in six different languages! 🌎👋</p>
-                        <br>
-                        <p>So yeah, you could say I'm basically a tech superhero... minus the cape and the actual
-                            superpowers! 🦸‍♂️</p>
-                        <br>
-                        <p class="terminal-line"> Crafting digital experiences one bug at a
-                            time.</p><br>
-                        <p class="terminal-line"> I don’t just write code—I wrestle with it
-                            until it behaves.</p><br>
-                        <p class="terminal-line"> Always learning, always building,
-                            occasionally breaking the internet (locally).</p>
-                    </div>
-                </div>
+  <!-- Projects -->
+  <section id="projects">
+    <p class="section-prompt"><span class="prompt-user">root@pandey:~$</span> <span class="prompt-cmd">ls projects/</span><span class="prompt-cursor" aria-hidden="true">▋</span></p>
+    <h2 class="section-title"><span>03.</span> Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>Khata — Personal Karobar</h3>
+          <span class="project-new">NEW</span>
+        </div>
+        <p>Records personal transactions and tracks expenses — the paper khata, rebuilt as software a shopkeeper can actually trust.</p>
+        <div class="project-tech">
+          <span>Android</span>
+          <span>Kotlin</span>
+          <span>Local DB</span>
+        </div>
+        <div class="project-links">
+          <!-- TODO: paste the Khata repo URL here after open-sourcing -->
+          <a href="#"><i class="fab fa-github"></i> Repo</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>ByteHome Launcher</h3>
+          <span class="project-new">NEW</span>
+        </div>
+        <p>An Android launcher with a futuristic tech HUD theme — a live system core, instant app search and a configurable dock. Zero permissions, zero ads, built for a 4 GB phone.</p>
+        <div class="project-tech">
+          <span>Android</span>
+          <span>Kotlin</span>
+          <span>XML</span>
+        </div>
+        <div class="project-links">
+          <!-- TODO: paste the ByteHome Launcher repo URL here after open-sourcing -->
+          <a href="#"><i class="fab fa-github"></i> Repo</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>ISP Toolkit</h3>
+          <span class="project-new">NEW</span>
+        </div>
+        <p>A collection of tools for the field — fiber loss, coupler and splitter calculations, ping, speed test, IP, gateway, connected-devices list, and router management.</p>
+        <div class="project-tech">
+          <span>Android</span>
+          <span>Kotlin</span>
+          <span>mDNS</span>
+          <span>Networking</span>
+        </div>
+        <div class="project-links">
+          <!-- TODO: paste the ISP Toolkit repo URL here after open-sourcing -->
+          <a href="#"><i class="fab fa-github"></i> Repo</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>Byte Keyboard</h3>
+          <span class="project-new">NEW</span>
+        </div>
+        <p>An Android keyboard with multilingual support in a tech cyber theme — with shortcuts for network engineers and technicians, and a coders keyboard too.</p>
+        <div class="project-tech">
+          <span>Android</span>
+          <span>Kotlin</span>
+          <span>IME</span>
+        </div>
+        <div class="project-links">
+          <!-- TODO: paste the Byte Keyboard repo URL here after open-sourcing -->
+          <a href="#"><i class="fab fa-github"></i> Repo</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>System Stats HUD</h3>
+          <span class="project-new">NEW</span>
+        </div>
+        <p>Fetches live resource usage and displays it on screen as a wallpaper, with dynamic updates — CPU, RAM, battery, network and storage, as a futuristic HUD.</p>
+        <div class="project-tech">
+          <span>Android</span>
+          <span>Kotlin</span>
+          <span>Canvas</span>
+        </div>
+        <div class="project-links">
+          <!-- TODO: paste the System Stats HUD repo URL here after open-sourcing -->
+          <a href="#"><i class="fab fa-github"></i> Repo</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>ITFix AI</h3>
+          <span class="project-new">NEW</span>
+        </div>
+        <p>An intelligent IT troubleshooting web app — describe a fault, get a direct diagnosis with numbered fix steps. Real diagnostics only, no invented results, built for the repair counter.</p>
+        <div class="project-tech">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>JavaScript</span>
+          <span>XAMPP</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>FileForge</h3>
+          <span class="project-new">NEW</span>
+        </div>
+        <p>A premium file toolbox that runs entirely in your browser — 50 tools for PDFs, images, documents, data and archives, with a shared queue and file hashing. No uploads, no backend.</p>
+        <div class="project-tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Local-First</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>C Language</h3>
+        </div>
+        <p>Solutions of Programs. A comprehensive collection of C logic and algorithms.</p>
+        <div class="project-tech">
+          <span>C</span>
+          <span>Algorithms</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>Mero Note</h3>
+        </div>
+        <p>Notes Management Application. Keep your thoughts organized and secure.</p>
+        <div class="project-tech">
+          <span>Web</span>
+          <span>Database</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>Contact Management</h3>
+        </div>
+        <p>A simple web based application for managing contacts efficiently.</p>
+        <div class="project-tech">
+          <span>CRUD</span>
+          <span>Web</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>TODO List</h3>
+        </div>
+        <p>A simple web based app for listing the works to do.</p>
+        <div class="project-tech">
+          <span>JS</span>
+          <span>Local Storage</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <div class="project-header">
+          <span class="folder-icon">📁</span>
+          <h3>Github Data Fetch</h3>
+        </div>
+        <p>Simple web app for fetch github profile data.</p>
+        <div class="project-tech">
+          <span>API</span>
+          <span>JSON</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+          <a href="https://github.com/Sudip-pandey" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+        </div>
+      </div>
 
-                <div class="about-visual">
-                    <div class="nickname-badge glass">
-                        <div class="badge-header">
-                            <span class="highlight">STATUS:</span> ONLINE
-                        </div>
-                        <div class="badge-avatar">
-                            <div class="avatar-placeholder">PS</div>
-                        </div>
-                        <div class="badge-content">
-                            <h3>Pandey Sudip</h3>
-                            <div class="badge-role">Tech Superhero 🦸‍♂️</div>
+    </div>
+  </section>
 
-                            <div class="badge-attributes">
-                                <div class="attribute">
-                                    <span class="attr-icon">☕</span>
-                                    <span class="attr-label">Coffee Powered</span>
-                                </div>
-                                <div class="attribute">
-                                    <span class="attr-icon">🐛</span>
-                                    <span class="attr-label">Bug Hunter</span>
-                                </div>
-                                <div class="attribute">
-                                    <span class="attr-icon">🚀</span>
-                                    <span class="attr-label">Fast Learner</span>
-                                </div>
-                                <div class="attribute">
-                                    <span class="attr-icon">💻</span>
-                                    <span class="attr-label">Code Lover</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- Interactive Terminal -->
+  <section id="terminal">
+    <p class="section-prompt"><span class="prompt-user">root@pandey:~$</span> <span class="prompt-cmd">./terminal</span><span class="prompt-cursor" aria-hidden="true">▋</span></p>
+    <h2 class="section-title"><span>04.</span> Terminal</h2>
+    <p class="section-sub">Type <code>help</code> and press Enter. Try <code>about</code>, <code>skills</code>, <code>projects</code>, <code>contact</code>, <code>github</code> or <code>clear</code>.</p>
+    <div class="terminal-window interactive-terminal">
+      <div class="terminal-header">
+        <div class="buttons">
+          <span class="btn-dot close"></span>
+          <span class="btn-dot minimize"></span>
+          <span class="btn-dot maximize"></span>
+        </div>
+        <span class="title">visitor@pandey:~ — interactive</span>
+      </div>
+      <div class="interactive-body" id="interactive-output" aria-live="polite"></div>
+      <div class="interactive-input-row">
+        <span class="interactive-prompt">visitor@pandey:~$</span>
+        <input id="interactive-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command input" placeholder="type 'help'…">
+      </div>
+    </div>
+  </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2 class="section-title">02. <span class="highlight">Skills</span></h2>
-            <div class="skills-container">
-                <!-- Data fetched from JSON logic visually -->
-                <div class="skill-category glass">
-                    <h3><span class="prompt">></span> Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-tag">C</div>
-                        <div class="skill-tag">C++</div>
-                        <div class="skill-tag">Python</div>
-                        <div class="skill-tag">JavaScript</div>
-                    </div>
-                </div>
-                <div class="skill-category glass">
-                    <h3><span class="prompt">></span> Frameworks</h3>
-                    <div class="skill-items">
-                        <div class="skill-tag">Django</div>
-                        <div class="skill-tag">Laravel</div>
-                        <div class="skill-tag">React</div>
-                    </div>
-                </div>
-                <div class="skill-category glass">
-                    <h3><span class="prompt">></span> Tools & Hobbies</h3>
-                    <div class="skill-items">
-                        <div class="skill-tag">VS Code</div>
-                        <div class="skill-tag">Coffee</div>
-                        <div class="skill-tag">Research</div>
-                        <div class="skill-tag">Music</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title"><span>05.</span> Contact</h2>
+    <div class="contact-container glass">
+      <div class="terminal-header">
+        <div class="buttons">
+          <span class="btn-dot close"></span>
+          <span class="btn-dot minimize"></span>
+          <span class="btn-dot maximize"></span>
+        </div>
+        <span class="title">send_message.exe</span>
+      </div>
+      <div class="contact-terminal-content">
+        <div class="contact-header">
+          <span>root@pandey:~$</span>
+          <span class="command">ls contacts/links</span>
+        </div>
+        <div class="contact-links-grid">
+          <a class="contact-item" href="https://github.com/Sudip-pandey" target="_blank" rel="noopener">
+            <span class="item-icon"><i class="fab fa-github"></i></span>
+            <span class="item-info">
+              <h3>GitHub</h3>
+              <p>@Sudip-pandey</p>
+            </span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/pandey-sudip-a33826238" target="_blank" rel="noopener">
+            <span class="item-icon"><i class="fab fa-linkedin"></i></span>
+            <span class="item-info">
+              <h3>LinkedIn</h3>
+              <p>@pandey-sudip-a33826238</p>
+            </span>
+          </a>
+          <a class="contact-item" href="https://youtube.com/technicalvandar" target="_blank" rel="noopener">
+            <span class="item-icon"><i class="fab fa-youtube"></i></span>
+            <span class="item-info">
+              <h3>YouTube</h3>
+              <p>@TechnicalVandar</p>
+            </span>
+          </a>
+        </div>
+        <div class="contact-footer">
+          <div class="terminal-action">
+            <span>root@pandey:~$</span>
+            <span class="command">echo "Let's build something amazing together!"</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="section-title">03. <span class="highlight">Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <span class="folder-icon">📁</span>
-                        <h3>C Language</h3>
-                    </div>
-                    <p>Solutions of Programs. A comprehensive collection of C logic and algorithms.</p>
-                    <div class="project-tech">
-                        <span>C</span>
-                        <span>Algorithms</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/pandey-sudip/C-Language-Solutions" target="_blank"
-                            title="GitHub Source"><i class="fab fa-github"></i> Source</a>
-                        <a href="https://pandey-sudip.github.io/C-Language-Solutions/" target="_blank"
-                            title="Live Demo"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <span class="folder-icon">📁</span>
-                        <h3>Mero Note</h3>
-                    </div>
-                    <p>Notes Management Application. Keep your thoughts organized and secure.</p>
-                    <div class="project-tech">
-                        <span>Web</span>
-                        <span>Database</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Sudip-pandey/noteapplication" target="_blank"
-                            title="GitHub Source"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <span class="folder-icon">📁</span>
-                        <h3>Image Search App</h3>
-                    </div>
-                    <p>A simple tool for searching high quality images using API integrations.</p>
-                    <div class="project-tech">
-                        <span>API</span>
-                        <span>JS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/pandey-sudip/Image-Search-Application" target="_blank"
-                            title="GitHub Source"><i class="fab fa-github"></i> Source</a>
-                        <a href="https://pandey959.github.io/image-search/" target="_blank" title="Live Demo"><i
-                                class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <span class="folder-icon">📁</span>
-                        <h3>Contact Management</h3>
-                    </div>
-                    <p>A simple web based application for managing contacts efficiently.</p>
-                    <div class="project-tech">
-                        <span>CRUD</span>
-                        <span>Web</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/pandey-sudip/cotact-saving-system" target="_blank"
-                            title="GitHub Source"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <span class="folder-icon">📁</span>
-                        <h3>TODO List</h3>
-                    </div>
-                    <p>A simple web based app for listing the works to do.</p>
-                    <div class="project-tech">
-                        <span>JS</span>
-                        <span>Local Storage</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/pandey-sudip/todo-app" target="_blank" title="GitHub Source"><i
-                                class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <span class="folder-icon">📁</span>
-                        <h3>Github Data Fetch</h3>
-                    </div>
-                    <p>Simple web app for fetch github profile data.</p>
-                    <div class="project-tech">
-                        <span>API</span>
-                        <span>JSON</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/pandey-sudip/github-Profile-data-fetch" target="_blank"
-                            title="GitHub Source"><i class="fab fa-github"></i> Source</a>
-                        <a href="https://pandey-sudip.github.io/github-Profile-data-fetch/" target="_blank"
-                            title="Live Demo"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <footer>
+    <p>Built with ❤ &amp; Coffee. Copyright © 2026 Sudip Pandey.</p>
+  </footer>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title">04. <span class="highlight">Contact</span></h2>
-            <div class="contact-container glass">
-                <div class="terminal-header small">
-                    <div class="title">send_message.exe</div>
-                </div>
-                <div class="contact-terminal-content">
-                    <div class="contact-header">
-                        <span class="prompt">root@pandey:~$</span>
-                        <span class="command">ls contacts/links</span>
-                    </div>
-
-                    <div class="contact-links-grid">
-                        <!-- <a href="mailto:pandeysp885@gmail.com" class="contact-item glass">
-                            <div class="item-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="item-info">
-                                <h3>Email</h3>
-                                <p>pandeysp885@gmail.com</p>
-                            </div>
-                        </a> -->
-                        <a href="https://github.com/Sudip-pandey" target="_blank" class="contact-item glass">
-                            <div class="item-icon"><i class="fab fa-github"></i></div>
-                            <div class="item-info">
-                                <h3>GitHub</h3>
-                                <p>@Sudip-pandey</p>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/pandey-sudip-a33826238/" target="_blank" class="contact-item glass">
-                            <div class="item-icon"><i class="fab fa-linkedin"></i></div>
-                            <div class="item-info">
-                                <h3>LinkedIn</h3>
-                                <p>@pandey-sudip-a33826238</p>
-                            </div>
-                        </a>
-                        <!-- <a href="https://facebook.com/whiospandey" target="_blank" class="contact-item glass">
-                            <div class="item-icon"><i class="fab fa-facebook-f"></i></div>
-                            <div class="item-info">
-                                <h3>Facebook</h3>
-                                <p>@whiospandey</p>
-                            </div>
-                        </a> -->
-                        <a href="https://youtube.com/@technicalvandar" target="_blank" class="contact-item glass">
-                            <div class="item-icon"><i class="fab fa-youtube"></i></div>
-                            <div class="item-info">
-                                <h3>YouTube</h3>
-                                <p>@TechnicalVandar</p>
-                            </div>
-                        </a>
-                        <!-- <a href="https://www.instagram.com/pandey_sp_885" target="_blank" class="contact-item glass">
-                            <div class="item-icon"><i class="fab fa-instagram"></i></div>
-                            <div class="item-info">
-                                <h3>Instagram</h3>
-                                <p>@pandey_sp_885</p>
-                            </div>
-                        </a> -->
-                    </div>
-
-                    <div class="contact-footer">
-                        <div class="terminal-action">
-                            <span class="prompt">root@pandey:~$</span>
-                            <span class="command">echo "Let's build something amazing together!"</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-info">
-                    <p>-- OR --</p>
-                    <div class="social-links">
-                        <a href="https://pandey-sudip.com.np/" target="_blank" class="social-icon">IG</a>
-                        <a href="https://pandey-sudip.com.np/" target="_blank" class="social-icon">GH</a>
-                        <a href="https://pandey-sudip.com.np/" target="_blank" class="social-icon">LI</a>
-                    </div>
-                    <p class="small-text">Address: Nepal</p>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <p>Built with <span style="color:red">❤</span> & Coffee. Copyright © 2023 Sudip Pandey.</p>
-        </footer>
-    </main>
-
-    <!-- GSAP Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
-    <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script>
+gsap.registerPlugin(ScrollTrigger,TextPlugin);const cursor=document.getElementById("cursor"),cursorBlur=document.getElementById("cursor-blur");document.addEventListener("mousemove",e=>{gsap.to(cursor,{x:e.clientX,y:e.clientY,duration:.1}),gsap.to(cursorBlur,{x:e.clientX,y:e.clientY,duration:.8})}),document.querySelectorAll("a, button, .project-card, .social-icon").forEach(e=>{e.addEventListener("mouseenter",()=>gsap.to(cursor,{scale:1.5,borderColor:"#58a6ff",backgroundColor:"rgba(88, 166, 255, 0.1)"})),e.addEventListener("mouseleave",()=>gsap.to(cursor,{scale:1,borderColor:"#58a6ff",backgroundColor:"transparent"}))});const menuBtn=document.querySelector(".menu-btn"),navLinks=document.querySelector(".nav-links");menuBtn&&menuBtn.addEventListener("click",()=>{navLinks.classList.toggle("active"),menuBtn.classList.toggle("active")}),document.querySelectorAll(".nav-links a").forEach(e=>{e.addEventListener("click",()=>{navLinks.classList.remove("active"),menuBtn.classList.remove("active")})});const jsonProfile=["{",' "Full Name" : "Pandey Sudip",',' "username" : "@whiospandey",',' "Pronouns" : "He | Him",',' "Education" : "High School Completed",',' "Languages" : [ "C", "C++", "Py", "JS" ],',' "Frameworks" : [ "Django", "Laravel", "React" ],',' "Hobbies" : [ "Coding", "Coffee", "Research" ],',' "Needs" : [',' { "coffee" : "^1.0.0" },',' { "music" : "Lo-Fi" },',' { "internet" : "100mbps" }'," ]","}"],lineNumbersContainer=document.querySelector(".line-numbers");jsonProfile.forEach((e,t)=>{lineNumbersContainer.innerHTML+=`${t+1}<br>`});const typeTarget=document.getElementById("typewriter-target");let lineIndex=0,charIndex=0,currentLine="",isTag=!1;function typeLine(){if(lineIndex<jsonProfile.length){const e=document.createElement("div");e.innerHTML=jsonProfile[lineIndex],e.style.opacity=0,e.style.transform="translateY(10px)",typeTarget.appendChild(e),gsap.to(e,{opacity:1,y:0,duration:.1,ease:"power1.out",onComplete:()=>{lineIndex++,setTimeout(typeLine,50)}})}}const tl=gsap.timeline();tl.from(".terminal-window",{scale:.8,opacity:0,duration:1,ease:"back.out(1.7)"}).add(typeLine).from(".scroll-indicator",{opacity:0,y:20,duration:1},"+=2"),gsap.utils.toArray(".glass, .section-title").forEach(e=>{gsap.from(e,{scrollTrigger:{trigger:e,start:"top 85%",toggleActions:"play none none reverse"},y:40,opacity:0,duration:.8,ease:"power2.out"})}),function(){var e=document.getElementById("interactive-output"),t=document.getElementById("interactive-input");if(e&&t){var n={help:"Available commands:\n  about    — who I am\n  skills   — my skills\n  projects — featured projects\n  contact  — how to reach me\n  github   — my GitHub profile\n  clear    — clear the terminal",about:"Pandey Sudip — IT Technician & self-taught developer from Waling, Syangja, Nepal.\nHead Technician at Gaihre Computer & Electronics. Diploma in IT (2023).\nI fix hardware by day and build Android apps & web tools by night.",skills:"Languages: Kotlin, JavaScript, Python, C, C++\nAndroid: Jetpack Compose, Room, CameraX, IME, SQLite\nWeb & Backend: HTML, CSS, PHP, MySQL, XAMPP\nIT & Networking: Fiber optics, networking, CCTV, PC & printer repair",projects:"Featured: Khata, ByteHome Launcher, ISP Toolkit, ByteKeyboard\nAlso: System Stats HUD, ITFix AI, FileForge — see the Projects section above.",contact:"GitHub:   github.com/Sudip-pandey\nLinkedIn: linkedin.com/in/pandey-sudip-a33826238\nYouTube:  youtube.com/technicalvandar\nEmail:    pandeysp885@gmail.com",github:"GitHub: https://github.com/Sudip-pandey"};o("Welcome to pandey@terminal — type 'help' to begin.","term-ok"),t.addEventListener("keydown",function(a){var r,i;"Enter"===a.key&&(r=t.value,i=r.trim().toLowerCase(),o("visitor@pandey:~$ "+r.trim(),"term-echo"),i&&("clear"!==i?n[i]?o(n[i]):o("Command not found: '"+i+"'. Type 'help' for available commands.","term-err"):e.textContent=""),t.value="")}),e.parentElement.addEventListener("click",function(){t.focus()})}function o(t,n){var o=document.createElement("span");o.className=n||"term-out",o.textContent=t,e.appendChild(o),e.scrollTop=e.scrollHeight}}();
+</script>
 </body>
-
 </html>
-
-
-
-
-
